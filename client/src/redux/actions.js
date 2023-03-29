@@ -24,6 +24,7 @@ export const FETCH_OLD_SHOWS_FAILED = 'oldShows/fetchFailed';
 
 
 const apiUrl = process.env.REACT_APP_BASE_URL;
+//const apiUrl = 'http://localhost:3001';
 
 export const clearFilters = () => {
   return (dispatch) => {
