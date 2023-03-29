@@ -20,12 +20,11 @@
 }
 
 .shows__categories-title button {
-  background-color: inherit;
-  color: var(--color-rose);
+  background-color: var(--color-rose);
+  color: white;
   border: none;
-  text-shadow: inherit;
-  font-size: inherit;
-  font-weight: inherit;
+  font-size: 1.1rem;
+  font-weight: 600;
   display: inherit;
   cursor: pointer;
 }
