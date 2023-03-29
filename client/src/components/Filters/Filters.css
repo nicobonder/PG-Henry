@@ -19,8 +19,8 @@
   font-size: 1rem;
 }
 
-.shows__categories-title button {
-  background-color: var(--color-rose);
+.shows__categories-title button, .filter_remove_btn {
+  background-color: transparent;
   color: white;
   border: none;
   font-size: 1.1rem;
