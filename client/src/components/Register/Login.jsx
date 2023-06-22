@@ -24,8 +24,8 @@ export default function Login() {
   const { signIn } = UserAuth(); //Lo usamos para loguearse con email y passw
   const history = useHistory();
   const dispatch = useDispatch();
-  const [error, setError] = useState("");
   const [openModal, setOpenModal] = useState(false);
+  const [error, setError] = useState("");
   const [email, setEmail] = useState();
   const [input, setInput] = useState({
     email: "",
@@ -40,7 +40,7 @@ export default function Login() {
       imageWidth: 200,
       imageAlt: "Usuasio deslogueado.",
       title: "Yazz",
-      html: "<h3>Gracias, te esperamos la próxima</p>",
+      html: "<h3>Gracias, te esperamos la próxima</h3y>",
       footer: "<p>Podés seguir navegando.</p>",
     });
   };
@@ -61,7 +61,6 @@ export default function Login() {
   const provider = new GoogleAuthProvider();
   provider.addScope("https://www.googleapis.com/auth/contacts.readonly");
   const auth = getAuth();
-  // const [isAuthorized, setIsAuthorized] = useSessionStorage("accessToken");
   //track the authentication status
   const [authorizedUser, setAuthorizedUser] = useState(
     false || sessionStorage.getItem("accessToken")

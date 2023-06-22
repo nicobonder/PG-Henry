@@ -38,21 +38,6 @@ export const AuthContextProvider = ({ children }) => {
       });
   }
 
-  // function resetPassword(email) {
-  //   alert('')
-  //   return auth.sendPasswordResetEmail(email).then((a) => {
-  //     alert(a)
-  //   })
-  // }
-
-  // function updateEmail(email) {
-  //   return user.updateEmail(email) //segun stackoverflow es con currentUser
-  // }
-
-  // function updatePassword(password) {
-  //   return user.updatePassword(password)//segun stackoverflow es con currentUser
-  // }
-
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (firebaseUser) => {
       console.log('AuthContextProvider.onAuthStateChanged(), user: ', firebaseUser);

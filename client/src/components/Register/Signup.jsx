@@ -60,7 +60,6 @@ export default function Signup() {
     phoneNumber: 0,
   });
 
-  //Alert para saludar cuando se desloguea
   const EmailUsed = () => {
     Swal.fire({
       imageUrl: Error_Search,
@@ -165,11 +164,14 @@ export default function Signup() {
 
   return (
     <div className="register_section">
+      
       {/*SECTION TO REGISTER*/}
       <div className="register_container">
         <h2 className="register_h2">¿TODAVÍA NO SOS USUARIO?</h2>
         <p className="signup_text">Registrate!</p>
+       
         <form onSubmit={(e) => handleSubmitSignup(e)} className="register_form">
+          
           <div className="register_info_wraper">
             <label className="register-form_label" htmlFor="name">
               Nombre y apellido:
@@ -201,6 +203,7 @@ export default function Signup() {
             />
             {errors.email && <p className="signup_error">{errors.email}</p>}
           </div>
+
           <div className="register_info_wraper">
             <label className="register-form_label" htmlFor="phoneNumber">
               Teléfono:
@@ -262,6 +265,7 @@ export default function Signup() {
             />
             {errors.repassword && <p className="signup_error">{errors.repassword}</p>}
           </div>
+          
           <div className="register_info_wraper_check">
             <label className="register-label_check" htmlFor="terms">
               <Link to={"./terms"} className="register_link_terms">
